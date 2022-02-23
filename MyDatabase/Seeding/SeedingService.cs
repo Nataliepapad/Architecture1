@@ -80,7 +80,6 @@ namespace MyDatabase.Seeding
             db.Courses.Add(c4);
 
             db.SaveChanges();
-
         }
 
         public void SeedGrades()
