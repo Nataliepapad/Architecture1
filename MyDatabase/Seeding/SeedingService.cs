@@ -83,18 +83,7 @@ namespace MyDatabase.Seeding
 
         }
 
-        public void SeedCourse()
-        {
-            Course c1 = new Course() { Title = "C++ CB8", Duration = 60 };
-            Course c2 = new Course() { Title = "JAVA CB7", Duration = 80 };
-            Course c3 = new Course() { Title = "C# CB9", Duration = 70 };
-            Course c4 = new Course() { Title = "Javascript CB9", Duration = 120 };
-
-            db.Courses.Add(c1);
-            db.Courses.Add(c2);
-            db.Courses.Add(c3);
-            db.Courses.Add(c4);
-        }
+      
 
         public void SeedGrades()
         {
