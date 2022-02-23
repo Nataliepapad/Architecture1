@@ -1,6 +1,7 @@
 ﻿using Entities.School;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,6 +18,8 @@ namespace MyDatabase.Seeding
 
         public void SeedStudent()
         {
+
+
             Student s1 = new Student() { Name = "Hector", Age = 34 };
             Student s2 = new Student() { Name = "Mpampis", Age = 33 };
             Student s3 = new Student() { Name = "Lakis", Age = 30 };
@@ -43,6 +46,25 @@ namespace MyDatabase.Seeding
             db.Students.Add(s4);
 
             db.SaveChanges();
+
+        }
+
+        public void SeedMusicians()
+        {
+            Musician m1 = new Musician("haris");
+            Musician m2 = new Musician("maria");
+            Musician m3 = new Musician("Takis");
+            Musician m4 = new Musician("anna");
+
+            db.Musicians.Add(m1);
+            db.Musicians.Add(m2);
+            db.Musicians.Add(m3);
+            db.Musicians.Add(m4);
+
+
+            db.SaveChanges();
+
+
         }
 
         public void SeedCourse()
@@ -56,6 +78,8 @@ namespace MyDatabase.Seeding
             db.Courses.Add(c2);
             db.Courses.Add(c3);
             db.Courses.Add(c4);
+
+            db.SaveChanges();
         }
 
         public void SeedGrades()
@@ -65,6 +89,19 @@ namespace MyDatabase.Seeding
 
             db.Grades.Add(g1);
             db.Grades.Add(g2);
+
+            db.SaveChanges();
+        }
+
+        public void SeedAssignmets()
+        {
+            Assignment a1 = new Assignment() { Name = "C#" };
+            Assignment a2 = new Assignment() { Name = "Html" };
+            Assignment a3 = new Assignment() { Name = "Java" };
+
+            db.Assignments.Add(a1);
+            db.Assignments.Add(a2);
+            db.Assignments.Add(a3);
 
             db.SaveChanges();
         }
