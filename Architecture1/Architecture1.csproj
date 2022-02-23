@@ -183,6 +183,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ApiControllers\MusiciansController.cs" />
     <Compile Include="Controllers\ApiControllers\ProjectsController.cs" />
+    <Compile Include="Controllers\ApiControllers\TrainersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
