@@ -10,8 +10,17 @@ using System.Threading.Tasks;
 
 namespace PersistenceGeneric.Repositories
 {
-    public class TrainerRepository 
+    public class TrainerRepository : GenericRepository<Trainer>, ITrainerRepository
     {
+        public TrainerRepository(ApplicationDbContext context) : base(context)
+        {
 
+        }
+
+        public IEnumerable<Trainer> GetTrainersOrderBy()
+        {
+            return Context.Trainers.OrderBy(t => t.Name).ToList();
+        }
     }
 }
+

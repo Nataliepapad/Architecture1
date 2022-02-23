@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace PersistenceGeneric.IRepositories
 {
-    public class ITrainerRepository
+    public interface ITrainerRepository : IGenericRepository<Trainer>
     {
-
+        IEnumerable<Trainer> GetTrainersOrderBy();
     }
     
 }
