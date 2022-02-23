@@ -82,13 +82,6 @@ namespace MyDatabase.Seeding
             db.SaveChanges();
         }
 
-<<<<<<< HEAD
-       
-=======
-        
-
-      
->>>>>>> 2b42bd9c422de7b90406e46943de4b1c3b402a3a
 
         public void SeedGrades()
         {
