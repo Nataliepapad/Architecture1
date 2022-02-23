@@ -11,11 +11,10 @@ namespace Entities.School
 {
     public class Grades
     {
-
+        public int GradeId { get; set; }
         [Range(0, 100,ErrorMessage = "Value for {0} must be between {1} and {2}.")]
-        public int Grade { get; set; }
-        
-        
+        public int? Grade { get; set; }
+        public string Type { get; set; }
 
     }
 }
