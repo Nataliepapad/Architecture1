@@ -19,8 +19,8 @@ namespace MyDatabase.Seeding
         public void SeedStudent()
         {
 
-           
-             Student s1 = new Student() { Name = "Hector", Age = 34 };
+
+            Student s1 = new Student() { Name = "Hector", Age = 34 };
             Student s2 = new Student() { Name = "Mpampis", Age = 33 };
             Student s3 = new Student() { Name = "Lakis", Age = 30 };
             Student s4 = new Student() { Name = "Fanis", Age = 45 };
@@ -80,10 +80,15 @@ namespace MyDatabase.Seeding
             db.Courses.Add(c4);
 
             db.SaveChanges();
-
         }
 
+<<<<<<< HEAD
        
+=======
+        
+
+      
+>>>>>>> 2b42bd9c422de7b90406e46943de4b1c3b402a3a
 
         public void SeedGrades()
         {
@@ -105,6 +110,23 @@ namespace MyDatabase.Seeding
             db.Assignments.Add(a1);
             db.Assignments.Add(a2);
             db.Assignments.Add(a3);
+
+            db.SaveChanges();
+        }
+
+        public void SeedTrainers()
+        {
+            Trainer t1 = new Trainer() { Name = "Christos" };
+            Trainer t2 = new Trainer() { Name = "Nikos" };
+            Trainer t3 = new Trainer() { Name = "Natalia" };
+            Trainer t4 = new Trainer() { Name = "Anna" };
+            Trainer t5 = new Trainer() { Name = "Xaris" };
+
+            db.Trainers.Add(t1);
+            db.Trainers.Add(t2);
+            db.Trainers.Add(t3);
+            db.Trainers.Add(t4);
+            db.Trainers.Add(t5);
 
             db.SaveChanges();
         }
