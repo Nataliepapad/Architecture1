@@ -9,15 +9,16 @@ using System.Threading.Tasks;
 
 namespace PersistenceGeneric.Repositories
 {
-    public class GradeRepository : GenericRepository<Course>, ICourseRepository
+    public class GradeRepository : GenericRepository<Grade>, IGradeRepository
     {
         public GradeRepository(ApplicationDbContext context) : base(context)
         {
         }
 
-        public IEnumerable<Course> GetCoursesOrderBy()
+        public IEnumerable<Grade> GetGradesOrderBy()
         {
-            throw new NotImplementedException();
+            var gradesOrdered = Context.Grades.OrderBy(g=>g.Type);
+            return gradesOrdered;
         }
     }
 }
