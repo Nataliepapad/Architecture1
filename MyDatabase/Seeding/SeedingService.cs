@@ -82,6 +82,10 @@ namespace MyDatabase.Seeding
             db.SaveChanges();
         }
 
+        }
+
+      
+
         public void SeedGrades()
         {
             Grade g1 = new Grade() { Type = "Theoretical" };
@@ -102,6 +106,23 @@ namespace MyDatabase.Seeding
             db.Assignments.Add(a1);
             db.Assignments.Add(a2);
             db.Assignments.Add(a3);
+
+            db.SaveChanges();
+        }
+
+        public void SeedTrainers()
+        {
+            Trainer t1 = new Trainer() { Name = "Christos" };
+            Trainer t2 = new Trainer() { Name = "Nikos" };
+            Trainer t3 = new Trainer() { Name = "Natalia" };
+            Trainer t4 = new Trainer() { Name = "Anna" };
+            Trainer t5 = new Trainer() { Name = "Xaris" };
+
+            db.Trainers.Add(t1);
+            db.Trainers.Add(t2);
+            db.Trainers.Add(t3);
+            db.Trainers.Add(t4);
+            db.Trainers.Add(t5);
 
             db.SaveChanges();
         }
