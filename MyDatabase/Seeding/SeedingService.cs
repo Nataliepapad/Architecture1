@@ -93,5 +93,18 @@ namespace MyDatabase.Seeding
 
             db.SaveChanges();
         }
+
+        public void SeedAssignmets()
+        {
+            Assignment a1 = new Assignment() { Name = "C#" };
+            Assignment a2 = new Assignment() { Name = "Html" };
+            Assignment a3 = new Assignment() { Name = "Java" };
+
+            db.Assignments.Add(a1);
+            db.Assignments.Add(a2);
+            db.Assignments.Add(a3);
+
+            db.SaveChanges();
+        }
     }
 }
