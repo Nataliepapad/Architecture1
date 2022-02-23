@@ -17,6 +17,7 @@ namespace MyDatabase.Initializers
             service.SeedCourse();
             service.SeedGrades();
 
+            service.SeedTrainers();
             base.Seed(context);
         }
     }
