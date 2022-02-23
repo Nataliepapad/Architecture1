@@ -11,9 +11,8 @@ namespace Entities.School
 {
     public class Grade
     {
-        public int GradeId { get; set; }
-        
-        
+        [Key]
+        public int GradeId { get; set; }        
         public string Type { get; set; }
 
     }
