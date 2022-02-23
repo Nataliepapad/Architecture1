@@ -32,5 +32,6 @@ namespace MyDatabase
 
      //   public DbSet<Course> 
         public DbSet<Musician> Musicians { get; set; }
+        public DbSet<Assignment> Assignments { get; set; }
     }
 }

@@ -19,8 +19,8 @@ namespace MyDatabase.Seeding
         public void SeedStudent()
         {
 
-           
-             Student s1 = new Student() { Name = "Hector", Age = 34 };
+
+            Student s1 = new Student() { Name = "Hector", Age = 34 };
             Student s2 = new Student() { Name = "Mpampis", Age = 33 };
             Student s3 = new Student() { Name = "Lakis", Age = 30 };
             Student s4 = new Student() { Name = "Fanis", Age = 45 };
@@ -80,6 +80,7 @@ namespace MyDatabase.Seeding
             db.Courses.Add(c4);
 
             db.SaveChanges();
+        }
 
         }
 
@@ -92,6 +93,19 @@ namespace MyDatabase.Seeding
 
             db.Grades.Add(g1);
             db.Grades.Add(g2);
+
+            db.SaveChanges();
+        }
+
+        public void SeedAssignmets()
+        {
+            Assignment a1 = new Assignment() { Name = "C#" };
+            Assignment a2 = new Assignment() { Name = "Html" };
+            Assignment a3 = new Assignment() { Name = "Java" };
+
+            db.Assignments.Add(a1);
+            db.Assignments.Add(a2);
+            db.Assignments.Add(a3);
 
             db.SaveChanges();
         }
