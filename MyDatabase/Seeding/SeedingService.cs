@@ -56,7 +56,17 @@ namespace MyDatabase.Seeding
             db.Courses.Add(c2);
             db.Courses.Add(c3);
             db.Courses.Add(c4);
+        }
 
+        public void SeedGrades()
+        {
+            Grade g1 = new Grade() { Type = "Theoretical" };
+            Grade g2 = new Grade() { Type = "Practical" };
+
+            db.Grades.Add(g1);
+            db.Grades.Add(g2);
+
+            db.SaveChanges();
         }
     }
 }

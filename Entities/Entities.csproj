@@ -63,7 +63,7 @@
     <Compile Include="IdentityUsers\ApplicationUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="School\Course.cs" />
-    <Compile Include="School\Grades.cs" />
+    <Compile Include="School\Grade.cs" />
     <Compile Include="School\Assignment.cs" />
     <Compile Include="School\Project.cs" />
     <Compile Include="School\Student.cs" />
