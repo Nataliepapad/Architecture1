@@ -28,7 +28,7 @@ namespace Architecture1.Controllers.ApiControllers
         // GET: api/Trainers
         public IHttpActionResult GetTrainers()
         {
-            var trainers = trainerService.GetAll().Select(t => new{ t.Name,});
+            var trainers = trainerService.GetAll().Select(t => new{ t.Name});
 
             return Json(trainers);
         }
