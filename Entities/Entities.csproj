@@ -65,6 +65,7 @@
     <Compile Include="School\Course.cs" />
     <Compile Include="School\Grade.cs" />
     <Compile Include="School\Assignment.cs" />
+    <Compile Include="School\Musician.cs" />
     <Compile Include="School\Project.cs" />
     <Compile Include="School\Student.cs" />
     <Compile Include="School\Trainer.cs" />
