@@ -82,5 +82,29 @@ namespace MyDatabase.Seeding
             db.SaveChanges();
 
         }
+
+        public void SeedCourse()
+        {
+            Course c1 = new Course() { Title = "C++ CB8", Duration = 60 };
+            Course c2 = new Course() { Title = "JAVA CB7", Duration = 80 };
+            Course c3 = new Course() { Title = "C# CB9", Duration = 70 };
+            Course c4 = new Course() { Title = "Javascript CB9", Duration = 120 };
+
+            db.Courses.Add(c1);
+            db.Courses.Add(c2);
+            db.Courses.Add(c3);
+            db.Courses.Add(c4);
+        }
+
+        public void SeedGrades()
+        {
+            Grade g1 = new Grade() { Type = "Theoretical" };
+            Grade g2 = new Grade() { Type = "Practical" };
+
+            db.Grades.Add(g1);
+            db.Grades.Add(g2);
+
+            db.SaveChanges();
+        }
     }
 }
