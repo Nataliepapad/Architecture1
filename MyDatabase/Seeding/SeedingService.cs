@@ -56,7 +56,6 @@ namespace MyDatabase.Seeding
             db.Courses.Add(c2);
             db.Courses.Add(c3);
             db.Courses.Add(c4);
-
         }
     }
 }
