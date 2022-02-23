@@ -82,6 +82,10 @@ namespace MyDatabase.Seeding
             db.SaveChanges();
         }
 
+        }
+
+      
+
         public void SeedGrades()
         {
             Grade g1 = new Grade() { Type = "Theoretical" };
