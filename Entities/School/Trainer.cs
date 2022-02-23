@@ -10,6 +10,7 @@ namespace Entities.School
     {
         public int TrainerId { get; set; }
 
+        [Required]
         public string Name { get; set; }
     }
 }
